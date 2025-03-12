@@ -1,13 +1,3 @@
----
-title: "dataTransformation"
-output:
-  pdf_document: default
-  PDF file: default
-data: 3/12/2025
----
-
-
-```{r}
 library(tidyverse)
 
 
@@ -25,5 +15,3 @@ ggplot(data = dvst) + geom_density(mapping = aes(x=diversity), fill="blue")
 ggplot(data = dvst) + geom_density(mapping = aes(x=diversity, fill=cent), alpha=0.4)
 
 ggplot(data = dvst, mapping = aes(x=depth, y=total.SNPs)) + geom_point(alpha=0.1) + geom_smooth()
-
-```
